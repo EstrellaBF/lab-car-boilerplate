@@ -36,11 +36,44 @@
   justify-content: center;
 }
 
-.download-image {
+.info-box {
   background-color: orange;
   height: 19em;
+  padding: 2.5em;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.box-download-header-desktop {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.box-download-header-desktop p::after{
+  content: url("../assets/images/logoBlanco.png");
+  display: inline-block;
+}
+
+.btn-download input{
+  font-size: 1.6em;
+}
+
+.box-download-header-mobile, .box-download-text-mobile {
+  display: none;
+}
+
+.info-box h3 {
+  display: inline-block;
+}
+
+.btn-style {
+  border: none;
+  font-weight: bold;
+}
+
 /*
 .download-image h3::after{
   content: url(../assets/images/logoBlanco.png);  
