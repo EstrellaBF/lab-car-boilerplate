@@ -7,8 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main-without-gutter.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <title>Document</title>
+  <title>LabCar</title>
 </head>
 <body>
   <!--NAVBAR-->
@@ -43,37 +44,54 @@
   </div>
 
   <!--CENTER-->
-  <div class="container-fluid background-image-hero">
-    <div class="row">
-      <div class="col-xs-10 col-xs-offset-2">
+  <div class="container-fluid background-image-hero full-width">
+    <div class="row no-margin">
+      <div class="col-xs-10 col-xs-offset-2  col-sm-8 col-sm-offset-4 full-width">
         <div class="info-box">
-          <div class="box-download-header-desktop">
+          <div class="box-download-header-mobile">
             <p>Comienza a viajar<br> con </p>
           </div>
-          <div class="box-download-header-mobile">
+          <div class="box-download-header-desktop">
             <p>Disfruta del viaje</p>
             <p>Eres dueña de tu tiempo</p>
           </div>
-          <div class="btn-download">
+          <div class="box-download-text-desktop">
+            <p>Viaja con  </p>
+          </div>
+          <div class="btn-download-mobile">
             <input class="btn btn-default btn-style" type="button" value="Descarga el app">
           </div>
-          <div class="box-download-text-mobile">
-            <h3>Viaja con</h3>
-            <img alt="Brand" src="assets/images/logoBlanco.png">
+          <div class="btn-download-desktop">
+            <input class="btn btn-default btn-style" type="button" value="REG&#205;STRATE">
+            <p class="text-center">O bien</p>
+            <input class="btn btn-default btn-style" type="button" value="Convi&#233;rtete en conductor">
           </div>
+          <!--coment
+          <div>
+            O bien
+          </div>
+          <div>
+            <input class="btn btn-default btn-style" type="button" value="Convi&#233;rtete en conductor">
+          </div>-->
+
         </div>
       </div>
     </div>
   </div>
 
   <!--INFO APP-->
-  <div class="container-fluid info-app-style">
-    <div class="row">
-      <div class="col-xs-12">
+  <div class="container-fluid info-app-style full-width">
+    <div class="row no-margin">
+      <div class="col-xs-12 col-sm-10 no-padding">
         <div class="app-info">
           <div class="app-info-box text-center ">
-            <p>La nueva app</p>
+            <h3>La nueva app</h3>
             <img alt="Brand" src="assets/images/iPhone6Plus.png">
+            <div class="app-box-desktop">
+              <h3>Descarga la nueva app</h3>
+              <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido.</p>
+              <p>Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe exactamente a dónde ir.</p>
+            </div>
           </div>
           <div class="app-info-footer">
             <p>Llega a tu destino aún más rápido</p>
@@ -83,7 +101,7 @@
     </div>
   </div>
   <!--DRIVER-->
-  <div class="container-fluid driver-box-style">
+  <div class="container-fluid driver-box-style  full-width">
     <div class="row">
       <div class="col-xs-12">
         <div class="driver-box ">
@@ -99,28 +117,36 @@
     </div>
   </div>
   <!--PRICE & ROUTE-->
-  <div class="container price-route-style">
-    <div class="row">
-      <div class="col-xs-12">
+  <div class="container-fluid price-route-style">
+    <div class="row no-margin">
+      <div class="col-xs-12 col-sm-5">
         <div class="background-price-route">
-          <div class="info-price">
-            <h3>Tarifas</h3>
-            <p>Consulta las tarifas LabCar aquí.</p>
+          <div class="price-route-box">
+            <div class="info-price">
+              <h3>Tarifas</h3>
+              <p>Consulta las tarifas LabCar aquí.</p>
+            </div>
+            <div class="info-route">
+                <img alt="Brand" src="assets/images/shape.png"> 
+              <input type="text" class="form-control" placeholder="Text input">
+            </div>
+            <div class="info-route">
+              <img alt="Brand" src="assets/images/shape2.png"> 
+              <input type="text" class="form-control" placeholder="Text input">
+            </div>
+            <div class="btn-route text-center ">
+              <input class="btn btn-default btn-style" type="button" value="¡TRAZAR RUTA!">
+            </div>
           </div>
-          <div class="info-route">
-              <img alt="Brand" src="assets/images/shape.png"> 
-            <input type="text" class="form-control" placeholder="Text input">
-          </div>
-          <div class="info-route">
-            <img alt="Brand" src="assets/images/shape2.png"> 
-            <input type="text" class="form-control" placeholder="Text input">
-          </div>
-          <div class="btn-route text-center ">
-            <input class="btn btn-default btn-style" type="button" value="¡TRAZAR RUTA!">
-          </div>
-          <div class="route-map">
+            
+          <div class="route-map-mobile">
             <img alt="Brand" src="assets/images/SilentHill3D_GoogleMap12.jpg"> 
           </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-7">
+        <div class="route-map-desktop">
+          <img alt="Brand" src="assets/images/SilentHill3D_GoogleMap12.jpg"> 
         </div>
       </div>
     </div>
@@ -128,7 +154,7 @@
   <!--FOOTER-->
   <footer>
     <div class="container">
-      <div class="row">
+      <div class="row no-margin">
         <div class="col-xs-12">
           <div>
             <img alt="Brand" src="assets/images/logoBlanco.png">
@@ -137,34 +163,55 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-xs-6">
-          <div class="menu-footer-mobile">
-            <ul>
-              <li>Viaja</li>
-              <li>Conduce</li>
-              <li>Ciudades</li>
-              <li>Entregas</li>
-              <li>Cómo funciona?</li>
-              <li>Países</li>
-              <li>Seguridad</li>
-            </ul>
+        <div class="box-footer">
+          <div class="col-xs-6 col-sm-3">
+            <div class="menu-icons-mobile">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+              <i class="fa fa-apple" aria-hidden="true"></i>     
+              <i class="fa fa-play" aria-hidden="true"></i>            
+            </div>      
+            <div class="menu-apps-mobile"> 
+              <img alt="Brand" src="assets/images/enBadgeWebGeneric.png">        
+              <img alt="Brand" src="assets/images/appstore.png">      
+            </div>         
           </div>
-        </div>
-        <div class="col-xs-6">
-          <div class="menu-icons-mobile">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
-                <i class="fa fa-apple" aria-hidden="true"></i>
-                <i class="fa fa-play" aria-hidden="true"></i>
-              
+          <div class="col-xs-6 col-sm-3">
+            <div class="menu-footer-mobile">
+              <ul>
+                <li>Viaja</li>
+                <li>Conduce</li>
+                <li>Ciudades</li>
+                <li>Ciudades</li>
+                <li>Entregas</li>
+                <li>Cómo funciona?</li>
+                <li>Países</li>
+                <li>Seguridad</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="extra-footer-mobile">
+              <ul>
+                <li>Oportunidades</li>
+                <li>Nuestra historia</li>
+                <li>API de LabCar</li>
+                <li>Eventos</li>
+                <li>Desarrolladoras</li>
+                <li>Servicios</li>
+                <li>Laboratoria</li>
+                <li>Coders</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-3">  
+            <div class="menu-apps-desktop"> 
                 <img alt="Brand" src="assets/images/enBadgeWebGeneric.png">
-              
                 <img alt="Brand" src="assets/images/appstore.png">
-              
-            
-          </div>
-        </div>
+            </div>  
+          </div> 
+        </div> 
       </div>
       <div class="row">
         <div class="col-xs-12"></div>

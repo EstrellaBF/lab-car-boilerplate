@@ -1,10 +1,11 @@
 /* Los estilos de tu proyecto */
-
-/*RESET*/
-* {
-  box-sizing: border-box;
-  margin: 0;
+/*general*/
+.full-width {
   padding: 0;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 /*NAVBAR*/
@@ -22,7 +23,7 @@
   flex-direction: column;
   justify-content: center;
 }
-/*Fin navbar*/
+/*End navbar*/
 
 /*Center Image*/
 .background-image-hero {
@@ -37,30 +38,30 @@
 
 .info-box {
   background-color: orange;
-  height: 19em;
+  /*height: 19em;*/
   padding: 2.5em;
-  /*width: 100vw;*/
+  /*width: 79vw;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.box-download-header-desktop {
+.box-download-header-mobile {
   color: #fff;
-  font-size: 3em;
+  font-size: 3rem;
   font-weight: 600;
 }
 
-.box-download-header-desktop p::after{
+.box-download-header-mobile p::after, .box-download-text-desktop p::after{
   content: url("../assets/images/logoBlanco.png");
   display: inline-block;
 }
 
-.btn-download input{
-  font-size: 1.6em;
+.btn-download-mobile input{
+  font-size: 1.6rem;
 }
 
-.box-download-header-mobile, .box-download-text-mobile {
+.box-download-header-desktop, .box-download-text-desktop, .btn-download-desktop {
   display: none;
 }
 
@@ -72,7 +73,7 @@
   border: none;
   font-weight: bold;
 }
-/*Fin center image*/
+/*End center image*/
 
 /*Info app*/
 .info-app-style {
@@ -84,7 +85,7 @@
 }
 
 .app-info {
-  height: 44em;
+  /*height: 44em;*/
 }
 
 .app-info-box {
@@ -93,16 +94,24 @@
   padding: 3em;
 }
 
+.app-info-box-desktop{
+  display: none;
+}
+
 .app-info-box p {
   color: #fff;
   font-size: 2em;
+}
+
+.app-info-box img {
+  width: 50%;
 }
 
 .app-info-footer {
   color: #fff;
   font-size: 1.6em;
 }
-/*fin info app*/
+/*End info app*/
 
 /*DIVER*/
 /*Se intenta opacar con rgba y filter, con filter solo sirve al div y afecta al contenido que incluye al texto.*/
@@ -132,7 +141,7 @@
 }
 
 .driver-info p {
-  font-size: 1.6em;
+  font-size: 2rem;
 }
 
 .driver-info p:first-child {
@@ -142,9 +151,9 @@
 .driver-info input {
   background-color: #ffa500;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
-/*fin driver*/
+/*End driver*/
 
 /*PRICE & ROUTE*/
 .price-route-style {
@@ -153,7 +162,7 @@
 
 .background-price-route {
   margin: 0;
-  padding: 1em;
+  padding: 4em 0;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -174,32 +183,42 @@
 .info-route input{
   display: inline-block;
   margin: 1.3em;
-  width: 70vw;
+  width: 65vw;
 }
 
 .btn-route {
-  margin: 1.3em 0 5em 0;
+  margin: 1.3em 0 4em 0;
 }
 
 .btn-route input{
-  font-size: 1.2em;
+  font-size: 1.6rem;
   padding: 0.6em 2em;
 }
 
-.route-map {
+.route-map-desktop {
+  display: none;
+}
+
+.route-map-mobile {
   outline: 1px solid #fff;
 }
 
-.route-map img {
+.route-map-mobile img {
   background-size: cover;
   background-position: center;
   padding: 1em;
   width: 100%;
 }
+/*End price & route*/
+
 /*FOOTER*/
 footer {
   background-color: #000;
   padding: 1em 0;
+}
+
+.extra-footer-mobile {
+  display: none;
 }
 
 .menu-footer-mobile li {
@@ -215,11 +234,191 @@ footer {
   padding: 0.3em;
 }
 
-.menu-icons-mobile img {
+.menu-apps-desktop {
+  display: none;
+}
+
+.menu-apps-mobile img {
   margin: 2em 0 0;
+  width: 40vw;
 }
 
 .copyright{
   color:#fff;
 }
 /*end footer*/
+
+/*MEDIA*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px){
+  .box-download-header-mobile {
+    display: none;
+  }
+
+  .box-download-header-desktop, .box-download-text-desktop {
+    display:inline-block;
+    color: #fff;
+  }
+
+  .box-download-header-desktop {
+    font-size: 3.7rem;
+    line-height: 1;
+    margin-bottom: 1em;
+  }
+
+  .box-download-text-desktop {
+    font-size: 3.4rem;
+  }
+  
+  .box-download-text-desktop p::after{
+    content: url("../assets/images/logoBlanco.png");
+    display: inline-block;
+  }
+
+  .btn-download-mobile {
+    display: none;
+  }
+  .btn-download-desktop {
+    display: block;
+  }
+  
+  .btn-download-desktop p {
+    color: #fff;
+    font-size: 2.1rem;
+    margin: 3rem 0;
+  }
+
+  .btn-download-desktop p::after, .btn-download-desktop p::before{
+    background-color: #fff;
+    content: " ";
+    display: inline-block;
+    height: 1px;
+    margin: 0 4rem;
+    vertical-align: middle;
+    width: 20%;
+    
+  }
+
+  /*INFO APP*/
+  .no-padding {
+    padding: 0;
+  }
+
+  .app-info-box h3{
+    display: none;
+  }
+
+  .app-info-box {
+    display: flex;
+  }
+
+  .app-box-desktop {
+    color: #fff;
+    text-align: left;
+    display: flex;
+    display: inline-block;
+    margin-left: 3em;
+  }
+
+  .app-box-desktop h3{
+    display: block;
+  }
+  .app-box-desktop p {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+
+  .app-info-footer{
+    visibility: hidden;
+  }
+
+  /*DRIVER*/
+  .driver-info{
+    background-color: rgba(0, 0, 0, 0.6);
+    right: 0;
+    width: 50%;
+  }
+
+  .background-driver{
+    filter: brightness(100%);
+  }
+
+  .driver-box {
+    height: 40vw;
+  }
+
+  .info-price {
+    font-size: 1rem;
+  }
+
+  .info-route input {
+    width: 70%;
+}
+
+  .route-map-mobile {
+    display: none;
+  }
+
+  .route-map-desktop {
+    outline: 1px solid #fff;
+    margin: 4em 0;
+  }
+
+  .route-map-desktop img {
+    background-size: cover;
+    background-position: center;
+    padding: 1em;
+    width: 100%;
+  }
+  /*End Driver*/
+
+  /*FOOTER*/
+  footer {
+    padding: 3em 0;
+  }
+
+  .extra-footer-mobile {
+    color: #fff;
+    display: block;
+  }
+
+  .extra-footer-mobile ul li {
+    font-size: 1.2em;
+    list-style: none;
+    line-height: 2.4;
+  }
+  /*end footer*/
+  .menu-apps-mobile {
+    display: none;
+  }
+
+  .menu-apps-desktop {
+    display: block;
+  }
+
+  .menu-apps-desktop img {
+    width: 100%;
+  }
+
+  /*Price & route
+  .background-price-route {
+    flex-direction: row;
+  }
+
+  .price-route-box {
+    font-size: 1rem;
+  }*/
+
+}
+
+/* Medium devices (desktops, 992px and up) 
+@media (min-width: 768px){
+  .box-download-header-mobile p {
+    display: none !important;
+  }
+
+  .box-download-header-desktop, .box-download-text-desktop {
+    display:inline-block;
+    color: #fff;
+  }  
+}*/
