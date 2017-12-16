@@ -26,7 +26,7 @@
 /*Fin navbar*/
 
 /*Center Image*/
-.background-image {
+.background-image-hero {
   background-image: url(../assets/images/taxi.jpg);
   background-position: center 90%;
   background-size: cover;
@@ -40,7 +40,7 @@
   background-color: orange;
   height: 19em;
   padding: 2.5em;
-  width: 100vw;
+  /*width: 100vw;*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -73,13 +73,46 @@
   border: none;
   font-weight: bold;
 }
-
-/*
-.download-image h3::after{
-  content: url(../assets/images/logoBlanco.png);  
-  display: inline-block;
-  color: #fff;
-  font
-}*/
-
 /*Fin center image*/
+
+/*Info app*/
+.info-app-style {
+  background-color: #f7b617;
+}
+
+.info-app-background {
+  background-color: aqua;
+}
+
+.app-info {
+  height: 44em;
+}
+
+.app-info-box {
+  margin: 2.5em 0;
+  outline: 2px solid #fff;
+  padding: 3em;
+}
+
+.app-info-box p {
+  color: #fff;
+  font-size: 2em;
+}
+
+.app-info-footer {
+  color: #fff;
+  font-size: 1.6em;
+}
+/*fin info app*/
+
+/*DIVER*/
+.background-driver{
+  background-image: url(../assets/images/conduce.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.driver-box {
+  height: 70vw;
+}
+/*fin driver*/
