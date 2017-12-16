@@ -77,7 +77,7 @@
 
 /*Info app*/
 .info-app-style {
-  background-color: #f7b617;
+  background-color: #ffa500;
 }
 
 .info-app-background {
@@ -106,13 +106,43 @@
 /*fin info app*/
 
 /*DIVER*/
+/*Se intenta opacar con rgba y filter, con filter solo sirve al div y afecta al contenido que incluye al texto.*/
+/*La imágen de fondo al container, porque al ponerlo después de column me deja un padding y la imagen no se estira.*/
+.driver-box-style {
+  background-color: #363333;
+}
+
 .background-driver{
   background-image: url(../assets/images/conduce.jpg);
   background-size: cover;
   background-position: center;
+  filter: brightness(80%);
+  height: 100%;
 }
 
 .driver-box {
   height: 70vw;
+  position: relative;
+}
+
+.driver-info {
+  color:#fff;
+  padding: 4em 2em;
+  position: absolute;
+  z-index: 3;
+}
+
+.driver-info p {
+  font-size: 1.6em;
+}
+
+.driver-info p:first-child {
+  font-weight: 600;
+}
+
+.driver-info input {
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 1.6em;
 }
 /*fin driver*/
