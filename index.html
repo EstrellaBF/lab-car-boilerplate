@@ -35,9 +35,47 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#">Viaja</a></li>
                   <li><a href="#">Conduce</a></li>
-                  <li><a href="#">Inicia Sesión</a></li>
+                  <li><a href="#" data-toggle="modal" data-target="#myModal">Inicia Sesión</a></li>
                 </ul>
               </div>
+              <!-- Modal -->
+              <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog modal-md">
+                
+                  <!-- Modal content-->
+                  <div class="modal-content  style-modal-content">
+                      
+                    <div class="btn-close"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
+                    <div class="modal-header no-border">
+                      <img src="assets/images/unnamed.png" alt="profile" class="img-circle">
+                    </div>
+                    <div class="modal-body style-modal-body">
+                      <form>
+                        <div class="input-group form-group">
+                          <div class="input-group-addon">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                          </div>
+                          <input type="password" class="form-control" id="exampleInputAmount" placeholder="Username">
+                        </div>
+                        <div class="input-group form-group">
+                          <div class="input-group-addon">
+                              <i class="fa fa-unlock" aria-hidden="true"></i>
+                          </div>
+                          <input type="email" class="form-control" id="exampleInputAmount" placeholder="Password">
+                          </div>
+                            <button type="submit" class="btn btn-default">LOGING</button>
+                          <div class="forgot-password">
+                            Forgot password? <a href="#">Click Here</a>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer no-border">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- End Modal -->
           </div>
       </nav>
     </header>
@@ -62,18 +100,29 @@
             <input class="btn btn-default btn-style" type="button" value="Descarga el app">
           </div>
           <div class="btn-download-desktop">
-            <input class="btn btn-default btn-style" type="button" value="REG&#205;STRATE">
+            <input data-toggle="modal" data-target="#create-acount" class="btn btn-default btn-style" type="button" value="REG&#205;STRATE">
             <p class="text-center">O bien</p>
             <input class="btn btn-default btn-style" type="button" value="Convi&#233;rtete en conductor">
           </div>
-          <!--coment
-          <div>
-            O bien
+          <!-- Modal -->
+          <div class="modal fade" id="create-acount" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Some text in the modal.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <input class="btn btn-default btn-style" type="button" value="Convi&#233;rtete en conductor">
-          </div>-->
-
+          <!-- End Modal -->
         </div>
       </div>
     </div>
@@ -82,7 +131,7 @@
   <!--INFO APP-->
   <div class="container-fluid info-app-style full-width">
     <div class="row no-margin">
-      <div class="col-xs-12 col-sm-10 no-padding">
+      <div class="col-xs-12 col-sm-10 col-md-10 no-padding">
         <div class="app-info">
           <div class="app-info-box text-center ">
             <h3>La nueva app</h3>
@@ -119,7 +168,7 @@
   <!--PRICE & ROUTE-->
   <div class="container-fluid price-route-style">
     <div class="row no-margin">
-      <div class="col-xs-12 col-sm-4 col-sm-offset-1">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1">
         <div class="background-price-route">
           <div class="price-route-box">
             <div class="info-price">
@@ -144,7 +193,7 @@
           </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-5  col-sm-offset-1">
+      <div class="col-xs-12 col-sm-5  col-sm-offset-1 col-md-5  col-md-offset-1">
         <div class="route-map-desktop">
           <img alt="Brand" src="assets/images/SilentHill3D_GoogleMap12.jpg"> 
         </div>
@@ -164,7 +213,7 @@
       </div>
       <div class="row">
         <div class="box-footer">
-          <div class="col-xs-6 col-sm-2 col-sm-offset-1">
+          <div class="col-xs-6 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
             <div class="menu-icons-mobile">
               <i class="fa fa-facebook" aria-hidden="true"></i>
               <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -177,7 +226,7 @@
               <img alt="Brand" src="assets/images/appstore.png">      
             </div>         
           </div>
-          <div class="col-xs-6 col-sm-2 col-sm-offset-1">
+          <div class="col-xs-6 col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
             <div class="menu-footer-mobile">
               <ul>
                 <li>Viaja</li>
@@ -191,7 +240,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-2 col-sm-offset-1">
+          <div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
             <div class="extra-footer-mobile">
               <ul>
                 <li>Oportunidades</li>
@@ -205,7 +254,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-2">  
+          <div class="col-sm-2 col-md-2">  
             <div class="menu-apps-desktop"> 
                 <img alt="Brand" src="assets/images/enBadgeWebGeneric.png">
                 <img alt="Brand" src="assets/images/appstore.png">

@@ -23,6 +23,44 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.style-modal-content {
+  background-color: #6ad2f3;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.style-modal-content button {
+  display: inline;
+  text-align: right;
+}
+
+.style-modal-body {
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  margin: 0 10em;
+  text-align: center;
+}
+
+.btn-close {
+  width: 100%;
+}
+
+.style-modal-body form button {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.no-border {
+  border: none;
+}
+
+.forgot-password {
+  margin: 1em 0;
+}
+
 /*End navbar*/
 
 /*Center Image*/
@@ -92,7 +130,7 @@
   color: #fff;
   margin: 2.5em 0;
   outline: 2px solid #fff;
-  padding: 3em 10em;
+  padding: 0.5em 0 3em 0;
 }
 
 .app-box-desktop{
@@ -327,6 +365,8 @@ footer {
 
   .app-info-box {
     display: flex;
+    padding: 3em 10em;
+    margin: 2em 0;
   }
 
   .app-box-desktop {
