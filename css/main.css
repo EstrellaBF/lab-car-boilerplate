@@ -198,7 +198,8 @@
 
 .app-info-footer {
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
 }
 /*End info app*/
 
@@ -414,7 +415,7 @@ footer {
 
   .app-info-box {
     display: flex;
-    padding: 3em 10em;
+    padding: 2rem 5rem;
     margin: 2em 0;
   }
 
@@ -440,6 +441,7 @@ footer {
   }
 
   /*DRIVER*/
+  
   .driver-info{
     background-color: rgba(0, 0, 0, 0.6);
     height: 100%;
@@ -448,6 +450,10 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .driver-info .btn-style {
+    width: 100%;
   }
 
   .background-driver{
@@ -533,5 +539,13 @@ footer {
 
   .app-box-desktop p{
     font-size: 2rem;
+  }
+  /*INFO APP*/
+  .app-info-box {
+    padding: 2rem 5rem;
+  }
+  /*DRIVER*/
+  .driver-info .btn-style {
+    width: 22vw;
   }
 }  
