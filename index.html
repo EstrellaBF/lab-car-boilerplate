@@ -99,12 +99,12 @@
             <input class="btn btn-default btn-style" type="button" value="Descarga el app">
           </div>
           <div class="btn-download-desktop">
-            <input data-toggle="modal" data-target="#create-acount" class="btn btn-default btn-style" type="button" value="REG&#205;STRATE">
+            <input data-toggle="modal" data-target="#create-account" class="btn btn-default btn-style" type="button" value="REG&#205;STRATE">
             <p class="text-center">O bien</p>
-            <input class="btn btn-default btn-style" type="button" value="Convi&#233;rtete en conductor">
+            <input data-toggle="modal" data-target="#driver" class="btn btn-default btn-style" type="button" value="Convi&#233;rtete en conductor">
           </div>
           <!-- Modal -->
-          <div class="modal fade" id="create-acount" role="dialog">
+          <div class="modal fade" id="create-account" role="dialog">
             <div class="modal-dialog">
               <!-- Modal content-->
               <div class="modal-content account-modal-style">
@@ -152,6 +152,82 @@
                 </form>
                 <div class="modal-body">
                     <select class="form-control">Cómo te enteraste de nosotros?</select>
+                  <button class="btn btn-default" type="submit">ENVIAR</button>
+                </div>
+              </div>
+              <!-- End Modal content-->
+            </div>
+          </div>
+          <!-- End Modal -->
+          
+          <!-- Modal DRIVER -->
+          <div class="modal fade" id="driver" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+              <div class="modal-content account-modal-style">
+                <div class="btn-close">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <form class="form-horizontal"> 
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <label for="exampleInputPassword1">¿Tienes vehículo de 4 puertas?</label>
+                    </div>
+                    <div class="col-sm-12">
+                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Si<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">No</a></li>
+                      </ul>
+                    </div>
+                  </div> 
+                  <div class="form-group info-form-group">
+                    <div class="col-sm-12">
+                      <label for="exampleInputPassword1">Marca</label>
+                    </div>
+                    <div class="col-sm-12">
+                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Elige la marca del vehículo<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">No</a></li>
+                      </ul>
+                      <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a <a href="#">soporte@labcar.com</a></p>
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <label for="exampleInputPassword1">Modelo</label>
+                    </div>
+                    <div class="col-sm-12">
+                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Toyota<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">No</a></li>
+                      </ul>
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <label for="exampleInputPassword1">Año</label>
+                    </div>
+                    <div class="col-sm-12">
+                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">2017<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">No</a></li>
+                      </ul>
+                    </div>
+                  </div> 
+                  <div class="form-group info-form-group">
+                    <div class="col-sm-12">
+                      <label for="exampleInputPassword1">Número de placa</label>
+                    </div>
+                    <div class="col-sm-12">
+                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Número de placa<span class="caret"></span></button>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">No</a></li>
+                      </ul>
+                      <p>La información de la placa ayuda a los clientes a identificar tu vehículo.</p>
+                    </div>
+                  </div> 
+                </form>
+                <div class="modal-body btn-driver">
                   <button class="btn btn-default" type="submit">ENVIAR</button>
                 </div>
               </div>
