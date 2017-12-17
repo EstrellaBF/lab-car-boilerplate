@@ -44,7 +44,6 @@
                 
                   <!-- Modal content-->
                   <div class="modal-content  style-modal-content">
-                      
                     <div class="btn-close"><button type="button" class="close" data-dismiss="modal">&times;</button></div>
                     <div class="modal-header no-border">
                       <img src="assets/images/unnamed.png" alt="profile" class="img-circle">
@@ -63,7 +62,7 @@
                           </div>
                           <input type="email" class="form-control" id="exampleInputAmount" placeholder="Password">
                           </div>
-                            <button type="submit" class="btn btn-default">LOGING</button>
+                            <button type="submit" class="btn btn-default">LOGIN</button>
                           <div class="forgot-password">
                             Forgot password? <a href="#">Click Here</a>
                         </div>
@@ -108,18 +107,55 @@
           <div class="modal fade" id="create-acount" role="dialog">
             <div class="modal-dialog">
               <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header">
+              <div class="modal-content account-modal-style">
+                <div class="btn-close">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  <h4 class="modal-title">Modal Header</h4>
                 </div>
+                <div class="modal-header account-header text-center">
+                  <button class="btn btn-default" type="submit">YA TIENES UNA CUENTA?</button>
+                  <p>O CREA UNA CUENTA NUEVA</p>
+                </div>
+                <form class="form-horizontal"> 
+                  <div class="form-group input-name">
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
+                      </div>
+                  </div>  
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo Electr&#243;nico: ejemplo@correo.pe">
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Tel&#233;fono">
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Contrase&#241;a">
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ciudad">
+                    </div>
+                  </div> 
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="number" class="form-control" id="exampleInputEmail1" placeholder="(Opcional) C&#243;digo de invitaci&#243;n">
+                    </div>
+                  </div> 
+                </form>
                 <div class="modal-body">
-                  <p>Some text in the modal.</p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <select class="form-control">Cómo te enteraste de nosotros?</select>
+                  <button class="btn btn-default" type="submit">ENVIAR</button>
                 </div>
               </div>
+              <!-- End Modal content-->
             </div>
           </div>
           <!-- End Modal -->

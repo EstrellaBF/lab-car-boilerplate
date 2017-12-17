@@ -24,6 +24,7 @@
   justify-content: center;
 }
 
+/*Modal log in*/
 .style-modal-content {
   background-color: #6ad2f3;
   padding: 0.5em;
@@ -53,6 +54,8 @@
   color: #fff;
 }
 
+/*End Login modal*/
+
 .no-border {
   border: none;
 }
@@ -64,6 +67,28 @@
 /*End navbar*/
 
 /*Center Image*/
+
+/*Modal*/
+.account-modal-style {
+  background-color: #c5ccdc;
+  padding: 0.5em 2.5em;
+}
+
+.account-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-header button {
+  background-color: #000;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.input-name input {
+
+}
+/*end modal*/
 .background-image-hero {
   background-image: url(../assets/images/taxi.jpg);
   background-position: center 90%;
