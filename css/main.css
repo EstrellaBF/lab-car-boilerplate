@@ -90,6 +90,10 @@
 /*end modal*/
 
 /*Modal Driver*/
+
+.driver-margin {
+  margin-top: 1.4em;
+}
 .btn-list{
   width: 100%;
   font-size: 1.3rem;
@@ -106,7 +110,7 @@
   width: 100%;
 }
 
-.info-form-group button {
+.col-sm-12 .btn-list {
   text-align: left;
 }
 
@@ -278,12 +282,6 @@
   margin: 1.3em;
   width: 65vw;
 }
-
-
-[type="text"] {
-  color: #fff;
-}
-
 
 .btn-route {
   margin: 1.3em 0 4em 0;
