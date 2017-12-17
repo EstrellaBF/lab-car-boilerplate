@@ -39,7 +39,7 @@
 .info-box {
   background-color: orange;
   /*height: 19em;*/
-  padding: 2.5em;
+  padding: 2em;
   /*width: 79vw;*/
   display: flex;
   flex-direction: column;
@@ -89,19 +89,21 @@
 }
 
 .app-info-box {
+  color: #fff;
   margin: 2.5em 0;
   outline: 2px solid #fff;
-  padding: 3em;
+  padding: 3em 10em;
 }
 
-.app-info-box-desktop{
+.app-box-desktop{
   display: none;
 }
 
+/*
 .app-info-box p {
   color: #fff;
   font-size: 2em;
-}
+}*/
 
 .app-info-box img {
   width: 50%;
@@ -152,6 +154,7 @@
   background-color: #ffa500;
   color: #fff;
   font-size: 1.6rem;
+  width: 50%;
 }
 /*End driver*/
 
@@ -181,10 +184,18 @@
 }
 
 .info-route input{
+  background-color: #ffa500;
+  border: 1px solid #fff;
   display: inline-block;
   margin: 1.3em;
   width: 65vw;
 }
+
+
+[type="text"] {
+  color: #fff;
+}
+
 
 .btn-route {
   margin: 1.3em 0 4em 0;
@@ -221,6 +232,12 @@ footer {
   display: none;
 }
 
+.box-footer {
+  display: flex;
+  /* flex-direction: unset; */
+  flex-direction: row-reverse;
+}
+
 .menu-footer-mobile li {
   color: #fff;
   font-size: 1.2em;
@@ -240,7 +257,7 @@ footer {
 
 .menu-apps-mobile img {
   margin: 2em 0 0;
-  width: 40vw;
+  width: 30vw;
 }
 
 .copyright{
@@ -322,10 +339,11 @@ footer {
 
   .app-box-desktop h3{
     display: block;
+    font-size: 2.3rem;
   }
   .app-box-desktop p {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .app-info-footer{
@@ -335,8 +353,12 @@ footer {
   /*DRIVER*/
   .driver-info{
     background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
     right: 0;
-    width: 50%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   .background-driver{
@@ -353,13 +375,15 @@ footer {
 
   .info-route input {
     width: 70%;
-}
+  }
+
 
   .route-map-mobile {
     display: none;
   }
 
   .route-map-desktop {
+    display: block;
     outline: 1px solid #fff;
     margin: 4em 0;
   }
@@ -400,25 +424,25 @@ footer {
     width: 100%;
   }
 
-  /*Price & route
-  .background-price-route {
+  .box-footer {
+    display: flex;
     flex-direction: row;
+    align-items: flex-end;
   }
 
-  .price-route-box {
-    font-size: 1rem;
-  }*/
-
+  .menu-apps-desktop img {
+    margin-bottom: 1em;
+  }
 }
 
-/* Medium devices (desktops, 992px and up) 
-@media (min-width: 768px){
-  .box-download-header-mobile p {
-    display: none !important;
+/* Medium devices (desktops, 992px and up)}*/ 
+@media (min-width: 992px){
+  /*INFO APP*/
+  .app-box-desktop h3{
+    font-size: 3.2rem;
   }
 
-  .box-download-header-desktop, .box-download-text-desktop {
-    display:inline-block;
-    color: #fff;
-  }  
-}*/
+  .app-box-desktop p{
+    font-size: 2rem;
+  }
+}  
