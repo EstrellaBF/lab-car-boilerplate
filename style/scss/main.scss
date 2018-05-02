@@ -1,0 +1,556 @@
+/*general*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.box-download-header-desktop, .box-download-text-desktop, .btn-download-desktop {
+  display: none;
+}
+
+$orange: #ffa500;
+$dark-grey: #363333;
+
+.app-box-desktop{
+  display: none;
+}
+
+.extra-footer {
+  display: none;
+}
+
+.menu-apps-desktop {
+  display: none;
+}
+
+
+
+
+// .full-width {
+//   padding: 0;
+// }
+
+// .no-margin {
+//   margin: 0;
+// }
+
+/*NAVBAR*/
+.menu-box {
+  background-color: #fff;
+  border: none;
+  margin: 1em 0;
+  .logo {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+
+/*CENTER*/ 
+.centerfold {
+  background-image: url(../../assets/images/taxi.png);
+  background-position: center 90%;
+  background-size: cover;
+  height: 500px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  .info-box {
+    background-color: $orange;
+    /*height: 19em;*/
+    padding: 1.5em;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .box-download-header-mobile {
+      color: #fff;
+      font-size: 2rem;
+      font-weight: 400; 
+      p:nth-child(2) {
+        display: inline-block;
+      }
+      img {
+        margin-left: 0.1em;
+        vertical-align: top;
+        width: 52%;
+      }
+    }
+    .btn-download-mobile {
+      .btn-style {
+        border: none;
+        font-weight: bold;
+        font-size: 1.6rem;
+      }
+    }
+    // .box-download-header-mobile p::after, .box-download-text-desktop p::after{
+    //   content: url("../assets/images/logoBlanco.png");
+    //   display: inline-block;
+    // }
+  }
+}
+
+
+/*INFO APP*/ 
+.info-app-box {
+  background-color: $orange;
+  .app-info-box {
+    color: #fff;
+    margin: 2.5em 0 1em;
+    border: 2px solid #fff;
+    padding: 0.5em 0 3em 0;
+    h3 {
+      text-transform: uppercase;
+    }
+    img {
+      margin-top: 1em;
+      width: 50%;
+    }
+    p {
+    color: #fff;
+    font-size: 2em;
+    }  
+  }
+  .app-info-footer {
+    color: #fff;
+    margin-bottom: 3rem;
+    text-align: center;
+    p {
+      font-size: 2rem;      
+    }
+  }
+
+}
+
+// /*Modal log in*/
+// .style-modal-content {
+//   background-color: #6ad2f3;
+//   padding: 0.5em;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
+
+// .style-modal-content button {
+//   display: inline;
+//   text-align: right;
+// }
+
+// .style-modal-body {
+//   background-color: #f7f7f7;
+//   border-radius: 7px;
+//   margin: 0 10em;
+//   text-align: center;
+// }
+
+// .btn-close {
+//   width: 100%;
+// }
+
+// .style-modal-body form button {
+//   background-color: #ffa500;
+//   color: #fff;
+// }
+// /*End Login modal*/
+
+// .no-border {
+//   border: none;
+// }
+
+// .forgot-password {
+//   margin: 1em 0;
+// }
+
+// /*End navbar*/
+
+// /*Center Image*/
+
+// /*Modal create account*/
+// .account-modal-style {
+//   background-color: #cdced0;
+//   padding: 0.5em 2.5em;
+// }
+
+// .account-header {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// .account-header button {
+//   background-color: #000;
+//   color: #fff;
+//   margin-bottom: 1em;
+// }
+
+// .info-form-group div p {
+//   color: #7c7c7c;
+// }
+// /*end modal*/
+
+// /*Modal Driver*/
+
+// .driver-margin {
+//   margin-top: 1.4em;
+// }
+// .btn-list{
+//   width: 100%;
+//   font-size: 1.3rem;
+// }
+
+// .btn-driver {
+//   margin: 1.3em 0;
+//   padding: 0;
+// }
+
+// .btn-driver button {
+//   background-color: #7dc2eb;
+//   color: #fff;
+//   width: 100%;
+// }
+
+// .col-sm-12 .btn-list {
+//   text-align: left;
+// }
+
+// /*end modal*/
+
+
+
+/*DIVER*/
+.driver-box {
+  // background-color: $dark-grey;
+  background-image: url(../../assets/images/driver.png);
+  background-size: cover;
+  background-position: center;
+  // height: 100%;
+  .driver-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    padding: 4em 2em;
+    p:first-child {
+      font-weight: 600;
+      font-size: 2.1rem !important; 
+    }
+    p {
+      font-size: 1.8rem;
+    }     
+    input {
+      background-color: $orange;
+      border: none;
+      color: #fff;
+      font-size: 1.8rem;    
+      margin: 1.2em 0 0;
+    }       
+  }
+}
+
+
+/*PRICE & ROUTE*/
+.price-route {
+  background-color: $orange;
+  .background-price-route {
+    margin: 0;
+    padding: 4em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .price-route-box {
+      .info-price {
+        color: #fff;
+        h3 {
+          font-size: 2em;
+        }    
+        p {
+          font-size: 1.6em;
+        }            
+      }      
+      .info-route {
+        input{
+          background-color: #ffa500;
+          border: 1px solid #fff;
+          display: inline-block;
+          margin: 1.3em;
+          width: 65vw;
+        }
+      }
+    }
+    .route-map-mobile {
+      img {
+        background-size: cover;
+        background-position: center;
+        padding: 1em;
+        width: 100%;
+      }
+    }  
+  }
+}
+
+
+
+
+
+
+
+
+
+
+// .btn-route {
+//   margin: 1.3em 0 4em 0;
+// }
+
+// .btn-route input{
+//   font-size: 1.6rem;
+//   padding: 0.6em 2em;
+// }
+
+
+// /*End price & route*/
+
+
+
+
+/*FOOTER*/
+footer {
+  background-color: #000;
+  padding: 1em 0;
+  .menu-footer-mobile {
+    li {
+      color: #fff;
+      font-size: 1.2em;
+      list-style: none;
+      line-height: 2.4;
+    }
+  }
+  .menu-icons-mobile {
+    i{
+      color: #fff;
+      font-size: 1.2em;
+      padding: 0.3em;
+    }
+  }
+  .menu-apps-mobile {
+    text-align: center;
+    img {
+      margin: 2em 0 0;
+      width: 30vw;
+    }
+  }
+  .copyright{
+    color:#fff;
+  }  
+}
+
+
+
+
+
+
+
+
+
+// /*end footer*/
+
+// /*MEDIA*/
+// /* Small devices (tablets, 768px and up) */
+// @media (min-width: 768px){
+//   .box-download-header-mobile {
+//     display: none;
+//   }
+
+//   .box-download-header-desktop, .box-download-text-desktop {
+//     display:inline-block;
+//     color: #fff;
+//   }
+
+//   .box-download-header-desktop {
+//     font-size: 3.7rem;
+//     line-height: 1;
+//     margin-bottom: 1em;
+//   }
+
+//   .box-download-text-desktop {
+//     font-size: 3.4rem;
+//   }
+  
+//   .box-download-text-desktop p::after{
+//     content: url("../assets/images/logoBlanco.png");
+//     display: inline-block;
+//   }
+
+//   .btn-download-mobile {
+//     display: none;
+//   }
+//   .btn-download-desktop {
+//     display: block;
+//   }
+  
+//   .btn-download-desktop p {
+//     color: #fff;
+//     font-size: 2.1rem;
+//     margin: 3rem 0;
+//   }
+
+//   .btn-download-desktop p::after, .btn-download-desktop p::before{
+//     background-color: #fff;
+//     content: " ";
+//     display: inline-block;
+//     height: 1px;
+//     margin: 0 4rem;
+//     vertical-align: middle;
+//     width: 20%;
+    
+//   }
+
+//   /*INFO APP*/
+//   .no-padding {
+//     padding: 0;
+//   }
+
+//   .app-info-box h3{
+//     display: none;
+//   }
+
+//   .app-info-box {
+//     display: flex;
+//     padding: 2rem 5rem;
+//     margin: 2em 0;
+//   }
+
+//   .app-box-desktop {
+//     color: #fff;
+//     text-align: left;
+//     display: flex;
+//     display: inline-block;
+//     margin-left: 3em;
+//   }
+
+//   .app-box-desktop h3{
+//     display: block;
+//     font-size: 2.3rem;
+//   }
+//   .app-box-desktop p {
+//     display: inline-block;
+//     font-size: 1.6rem;
+//   }
+
+//   .app-info-footer{
+//     visibility: hidden;
+//   }
+
+//   /*DRIVER*/
+  
+//   .driver-info{
+//     background-color: rgba(0, 0, 0, 0.6);
+//     height: 100%;
+//     right: 0;
+//     width: 40%;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//   }
+
+//   .driver-info .btn-style {
+//     width: 100%;
+//   }
+
+//   .background-driver{
+//     filter: brightness(100%);
+//   }
+
+//   .driver-box {
+//     height: 40vw;
+//   }
+
+//   .info-price {
+//     font-size: 1rem;
+//   }
+
+//   .info-route input {
+//     width: 70%;
+//   }
+
+
+//   .route-map-mobile {
+//     display: none;
+//   }
+
+//   .route-map-desktop {
+//     display: block;
+//     outline: 1px solid #fff;
+//     margin: 4em 0;
+//   }
+
+//   .route-map-desktop img {
+//     background-size: cover;
+//     background-position: center;
+//     padding: 1em;
+//     width: 100%;
+//   }
+//   /*End Driver*/
+
+//   /*FOOTER*/
+//   footer {
+//     padding: 3em 0;
+//   }
+
+//   .extra-footer-mobile {
+//     color: #fff;
+//     display: block;
+//   }
+
+//   .extra-footer-mobile ul li {
+//     font-size: 1.2em;
+//     list-style: none;
+//     line-height: 2.4;
+//   }
+//   /*end footer*/
+//   .menu-apps-mobile {
+//     display: none;
+//   }
+
+//   .menu-apps-desktop {
+//     display: block;
+//   }
+
+//   .menu-apps-desktop img {
+//     width: 100%;
+//   }
+
+//   .box-footer {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: flex-end;
+//   }
+
+//   .menu-apps-desktop img {
+//     margin-bottom: 1em;
+//   }
+// }
+
+// /* Medium devices (desktops, 992px and up)}*/ 
+// @media (min-width: 992px){
+//   /*INFO APP*/
+//   .app-box-desktop h3{
+//     font-size: 3.2rem;
+//   }
+
+//   .app-box-desktop p{
+//     font-size: 2rem;
+//   }
+//   /*INFO APP*/
+//   .app-info-box {
+//     padding: 2rem 5rem;
+//   }
+//   /*DRIVER*/
+//   .driver-info .btn-style {
+//     width: 22vw;
+//   }
+// }  
