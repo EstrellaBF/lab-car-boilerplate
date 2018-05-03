@@ -274,7 +274,7 @@ $dark-grey: #363333;
       }      
       .info-route {
         input{
-          background-color: #ffa500;
+          // background-color: #ffa500;
           border: 1px solid #fff;
           display: inline-block;
           margin: 1.3em;
@@ -345,6 +345,7 @@ footer {
   }
   .copyright{
     color:#fff;
+    text-align: center;
   }  
 }
 

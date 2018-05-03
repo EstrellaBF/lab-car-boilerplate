@@ -123,7 +123,6 @@
       .price-route .background-price-route .price-route-box .info-price p {
         font-size: 1.6em; }
     .price-route .background-price-route .price-route-box .info-route input {
-      background-color: #ffa500;
       border: 1px solid #fff;
       display: inline-block;
       margin: 1.3em;
@@ -153,6 +152,7 @@ footer {
       margin: 2em 0 0;
       width: 30vw; }
   footer .copyright {
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */
