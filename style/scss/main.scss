@@ -1,3 +1,4 @@
+
 /*general*/
 * {
   box-sizing: border-box;
@@ -64,7 +65,7 @@ $dark-grey: #363333;
   .info-box {
     background-color: $orange;
     /*height: 19em;*/
-    padding: 1.5em;
+    padding: 2em;
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -78,8 +79,9 @@ $dark-grey: #363333;
       }
       img {
         margin-left: 0.1em;
+        max-width: 120px;
         vertical-align: top;
-        width: 52%;
+        width: 100px;
       }
     }
     .btn-download-mobile {
@@ -234,7 +236,8 @@ $dark-grey: #363333;
     flex-direction: column;
     align-items: flex-start;
     color: #fff;
-    padding: 4em 2em;
+    padding: 0 2em;
+    margin: 7em 0;
     p:first-child {
       font-weight: 600;
       font-size: 2.1rem !important; 
@@ -320,7 +323,10 @@ $dark-grey: #363333;
 /*FOOTER*/
 footer {
   background-color: #000;
-  padding: 1em 0;
+  padding: 1.5em 0;
+  .logo-box {
+    margin-top: 1em;
+  }
   .menu-footer-mobile {
     li {
       color: #fff;
@@ -330,6 +336,7 @@ footer {
     }
   }
   .menu-icons-mobile {
+    text-align: right;
     i{
       color: #fff;
       font-size: 1.2em;
@@ -337,7 +344,7 @@ footer {
     }
   }
   .menu-apps-mobile {
-    text-align: center;
+    text-align: right;
     img {
       margin: 2em 0 0;
       width: 30vw;
@@ -353,188 +360,137 @@ footer {
 
 
 
+@media (min-width:575px) {
+  .centerfold {
+    .info-box {
+      width: 50%;
+    }
+  }
 
+  .driver-box {
+    .driver-info {
+      margin: 11em 0;
+    }
+  }
+}
 
+@media (min-width: 767px) {
+  .centerfold {
+    height: 600px;
+    .info-box {
+      padding: 3em;
+      .box-download-header-mobile {
+        display: none;
+      }
+      .box-download-header-desktop, .box-download-text-desktop {
+        display:inline-block;
+        color: #fff;
+      }
+      .box-download-header-desktop {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: 1em;
+      }
+      .box-download-text-desktop {
+        font-size: 2.5rem;
+        p {
+          display: inline-block;
+        }  
+        img {
+          margin-left: 0.1em;
+          vertical-align: sub;
+          width: 110px;
+        }
+      }
+      .btn-download-mobile {
+        display: none;
+      }
+      .btn-download-desktop {
+        display: block;
+        padding: 1em 0 0;
+        input {
+          font-weight: 700;
+        }
+        p {
+          color: #fff;
+          font-size: 2.1rem;
+          margin: 3rem 0;
+        }
+        p::after, p::before{
+          background-color: #fff;
+          content: " ";
+          display: inline-block;
+          height: 1px;
+          margin: 0 2rem;
+          vertical-align: middle;
+          width: 20%;
+        }
+      }
+    }
+  }
 
+  .info-app-box {
+    .app-info {
+      .app-info-box {
+        display: flex;
+        padding: 2rem 5rem;
+        margin: 2em 0;
+        h3 {
+          display: none;
+        }
+        .app-box-desktop {
+          color: #fff;
+          text-align: left;
+          display: flex;
+          display: inline-block;
+          margin-left: 3em;
+          h3 {
+            display: block;
+            font-size: 2.3rem;            
+          }
+          p {
+            display: inline-block;
+            font-size: 1.6rem;
+          }          
+        }  
+     
+      }
+      .app-info-footer {
+        display: none;        
+      }       
+    }
+  }
 
-// /*end footer*/
+  .driver-box {
+    .driver-info {
+      margin: 12em 0;
+    }
+  }
 
-// /*MEDIA*/
-// /* Small devices (tablets, 768px and up) */
-// @media (min-width: 768px){
-//   .box-download-header-mobile {
-//     display: none;
-//   }
+  footer {
+    .extra-footer {
+      color: #fff;
+      display: block;
+      ul {
+        li {
+          font-size: 1.2em;
+          list-style: none;
+          line-height: 2.4;          
+        }
+      }
+    }  
+    .menu-apps-mobile {
+      display: none;
+    }      
+    .menu-apps-desktop {
+      display: block;
+      img {
+        width: 100%;    
+      }
+    }
+  }
 
-//   .box-download-header-desktop, .box-download-text-desktop {
-//     display:inline-block;
-//     color: #fff;
-//   }
-
-//   .box-download-header-desktop {
-//     font-size: 3.7rem;
-//     line-height: 1;
-//     margin-bottom: 1em;
-//   }
-
-//   .box-download-text-desktop {
-//     font-size: 3.4rem;
-//   }
-  
-//   .box-download-text-desktop p::after{
-//     content: url("../assets/images/logoBlanco.png");
-//     display: inline-block;
-//   }
-
-//   .btn-download-mobile {
-//     display: none;
-//   }
-//   .btn-download-desktop {
-//     display: block;
-//   }
-  
-//   .btn-download-desktop p {
-//     color: #fff;
-//     font-size: 2.1rem;
-//     margin: 3rem 0;
-//   }
-
-//   .btn-download-desktop p::after, .btn-download-desktop p::before{
-//     background-color: #fff;
-//     content: " ";
-//     display: inline-block;
-//     height: 1px;
-//     margin: 0 4rem;
-//     vertical-align: middle;
-//     width: 20%;
-    
-//   }
-
-//   /*INFO APP*/
-//   .no-padding {
-//     padding: 0;
-//   }
-
-//   .app-info-box h3{
-//     display: none;
-//   }
-
-//   .app-info-box {
-//     display: flex;
-//     padding: 2rem 5rem;
-//     margin: 2em 0;
-//   }
-
-//   .app-box-desktop {
-//     color: #fff;
-//     text-align: left;
-//     display: flex;
-//     display: inline-block;
-//     margin-left: 3em;
-//   }
-
-//   .app-box-desktop h3{
-//     display: block;
-//     font-size: 2.3rem;
-//   }
-//   .app-box-desktop p {
-//     display: inline-block;
-//     font-size: 1.6rem;
-//   }
-
-//   .app-info-footer{
-//     visibility: hidden;
-//   }
-
-//   /*DRIVER*/
-  
-//   .driver-info{
-//     background-color: rgba(0, 0, 0, 0.6);
-//     height: 100%;
-//     right: 0;
-//     width: 40%;
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//   }
-
-//   .driver-info .btn-style {
-//     width: 100%;
-//   }
-
-//   .background-driver{
-//     filter: brightness(100%);
-//   }
-
-//   .driver-box {
-//     height: 40vw;
-//   }
-
-//   .info-price {
-//     font-size: 1rem;
-//   }
-
-//   .info-route input {
-//     width: 70%;
-//   }
-
-
-//   .route-map-mobile {
-//     display: none;
-//   }
-
-//   .route-map-desktop {
-//     display: block;
-//     outline: 1px solid #fff;
-//     margin: 4em 0;
-//   }
-
-//   .route-map-desktop img {
-//     background-size: cover;
-//     background-position: center;
-//     padding: 1em;
-//     width: 100%;
-//   }
-//   /*End Driver*/
-
-//   /*FOOTER*/
-//   footer {
-//     padding: 3em 0;
-//   }
-
-//   .extra-footer-mobile {
-//     color: #fff;
-//     display: block;
-//   }
-
-//   .extra-footer-mobile ul li {
-//     font-size: 1.2em;
-//     list-style: none;
-//     line-height: 2.4;
-//   }
-//   /*end footer*/
-//   .menu-apps-mobile {
-//     display: none;
-//   }
-
-//   .menu-apps-desktop {
-//     display: block;
-//   }
-
-//   .menu-apps-desktop img {
-//     width: 100%;
-//   }
-
-//   .box-footer {
-//     display: flex;
-//     flex-direction: row;
-//     align-items: flex-end;
-//   }
-
-//   .menu-apps-desktop img {
-//     margin-bottom: 1em;
-//   }
-// }
+}
 
 // /* Medium devices (desktops, 992px and up)}*/ 
 // @media (min-width: 992px){

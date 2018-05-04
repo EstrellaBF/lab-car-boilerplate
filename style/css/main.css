@@ -41,7 +41,7 @@
   .centerfold .info-box {
     background-color: #ffa500;
     /*height: 19em;*/
-    padding: 1.5em;
+    padding: 2em;
     width: 65%;
     display: flex;
     flex-direction: column;
@@ -54,8 +54,9 @@
         display: inline-block; }
       .centerfold .info-box .box-download-header-mobile img {
         margin-left: 0.1em;
+        max-width: 120px;
         vertical-align: top;
-        width: 52%; }
+        width: 100px; }
     .centerfold .info-box .btn-download-mobile .btn-style {
       border: none;
       font-weight: bold;
@@ -94,7 +95,8 @@
     flex-direction: column;
     align-items: flex-start;
     color: #fff;
-    padding: 4em 2em; }
+    padding: 0 2em;
+    margin: 7em 0; }
     .driver-box .driver-info p:first-child {
       font-weight: 600;
       font-size: 2.1rem !important; }
@@ -136,23 +138,113 @@
 /*FOOTER*/
 footer {
   background-color: #000;
-  padding: 1em 0; }
+  padding: 1.5em 0; }
+  footer .logo-box {
+    margin-top: 1em; }
   footer .menu-footer-mobile li {
     color: #fff;
     font-size: 1.2em;
     list-style: none;
     line-height: 2.4; }
-  footer .menu-icons-mobile i {
-    color: #fff;
-    font-size: 1.2em;
-    padding: 0.3em; }
+  footer .menu-icons-mobile {
+    text-align: right; }
+    footer .menu-icons-mobile i {
+      color: #fff;
+      font-size: 1.2em;
+      padding: 0.3em; }
   footer .menu-apps-mobile {
-    text-align: center; }
+    text-align: right; }
     footer .menu-apps-mobile img {
       margin: 2em 0 0;
       width: 30vw; }
   footer .copyright {
     color: #fff;
     text-align: center; }
+
+@media (min-width: 575px) {
+  .centerfold .info-box {
+    width: 50%; }
+
+  .driver-box .driver-info {
+    margin: 11em 0; } }
+@media (min-width: 767px) {
+  .centerfold {
+    height: 600px; }
+    .centerfold .info-box {
+      padding: 3em; }
+      .centerfold .info-box .box-download-header-mobile {
+        display: none; }
+      .centerfold .info-box .box-download-header-desktop, .centerfold .info-box .box-download-text-desktop {
+        display: inline-block;
+        color: #fff; }
+      .centerfold .info-box .box-download-header-desktop {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: 1em; }
+      .centerfold .info-box .box-download-text-desktop {
+        font-size: 2.5rem; }
+        .centerfold .info-box .box-download-text-desktop p {
+          display: inline-block; }
+        .centerfold .info-box .box-download-text-desktop img {
+          margin-left: 0.1em;
+          vertical-align: sub;
+          width: 110px; }
+      .centerfold .info-box .btn-download-mobile {
+        display: none; }
+      .centerfold .info-box .btn-download-desktop {
+        display: block;
+        padding: 1em 0 0; }
+        .centerfold .info-box .btn-download-desktop input {
+          font-weight: 700; }
+        .centerfold .info-box .btn-download-desktop p {
+          color: #fff;
+          font-size: 2.1rem;
+          margin: 3rem 0; }
+        .centerfold .info-box .btn-download-desktop p::after, .centerfold .info-box .btn-download-desktop p::before {
+          background-color: #fff;
+          content: " ";
+          display: inline-block;
+          height: 1px;
+          margin: 0 2rem;
+          vertical-align: middle;
+          width: 20%; }
+
+  .info-app-box .app-info .app-info-box {
+    display: flex;
+    padding: 2rem 5rem;
+    margin: 2em 0; }
+    .info-app-box .app-info .app-info-box h3 {
+      display: none; }
+    .info-app-box .app-info .app-info-box .app-box-desktop {
+      color: #fff;
+      text-align: left;
+      display: flex;
+      display: inline-block;
+      margin-left: 3em; }
+      .info-app-box .app-info .app-info-box .app-box-desktop h3 {
+        display: block;
+        font-size: 2.3rem; }
+      .info-app-box .app-info .app-info-box .app-box-desktop p {
+        display: inline-block;
+        font-size: 1.6rem; }
+  .info-app-box .app-info .app-info-footer {
+    display: none; }
+
+  .driver-box .driver-info {
+    margin: 12em 0; }
+
+  footer .extra-footer {
+    color: #fff;
+    display: block; }
+    footer .extra-footer ul li {
+      font-size: 1.2em;
+      list-style: none;
+      line-height: 2.4; }
+  footer .menu-apps-mobile {
+    display: none; }
+  footer .menu-apps-desktop {
+    display: block; }
+    footer .menu-apps-desktop img {
+      width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
