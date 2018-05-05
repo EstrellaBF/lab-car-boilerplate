@@ -105,13 +105,13 @@ $dark-grey: #363333;
   .app-info-box {
     color: #fff;
     margin: 2.5em 0 1em;
-    border: 2px solid #fff;
+    // border: 2px solid #fff;
     padding: 0.5em 0 3em 0;
     h3 {
       text-transform: uppercase;
     }
     img {
-      margin-top: 1em;
+      margin-top: 3em;
       width: 50%;
     }
     p {
@@ -347,7 +347,7 @@ footer {
     text-align: right;
     img {
       margin: 2em 0 0;
-      width: 30vw;
+      width: 80%;
     }
   }
   .copyright{
@@ -362,6 +362,7 @@ footer {
 
 @media (min-width:575px) {
   .centerfold {
+    height: 600px;
     .info-box {
       width: 50%;
     }
@@ -372,11 +373,24 @@ footer {
       margin: 11em 0;
     }
   }
+
+  footer {
+    .menu-apps-mobile {
+      img {
+        width: 60%;
+      }
+    }
+    .menu-icons-mobile {
+      i {
+        font-size: 1.4em;
+      }
+    }
+  }
 }
 
 @media (min-width: 767px) {
   .centerfold {
-    height: 600px;
+    height: 700px;
     .info-box {
       padding: 3em;
       .box-download-header-mobile {
@@ -421,7 +435,7 @@ footer {
           content: " ";
           display: inline-block;
           height: 1px;
-          margin: 0 2rem;
+          // margin: 0 2rem;
           vertical-align: middle;
           width: 20%;
         }
@@ -442,11 +456,14 @@ footer {
           color: #fff;
           text-align: left;
           display: flex;
-          display: inline-block;
+          /* display: inline-block; */
           margin-left: 3em;
+          flex-direction: column;
+          justify-content: center;
           h3 {
             display: block;
-            font-size: 2.3rem;            
+            font-size: 2.3rem;  
+            margin: 0 0 1em;        
           }
           p {
             display: inline-block;
@@ -485,14 +502,28 @@ footer {
     .menu-apps-desktop {
       display: block;
       img {
+        margin: 0 0 1em;
         width: 100%;    
       }
+    }
+    .menu-icons-mobile {
+      text-align: center;
     }
   }
 
 }
 
-// /* Medium devices (desktops, 992px and up)}*/ 
+@media (min-width: 991px) {
+  .info-app-box {
+    .app-info {
+      .app-info-box {
+        .app-box-desktop {
+          margin-left: 6em;
+        }
+      }
+    }
+  }
+}
 // @media (min-width: 992px){
 //   /*INFO APP*/
 //   .app-box-desktop h3{

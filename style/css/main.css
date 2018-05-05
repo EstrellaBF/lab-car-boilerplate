@@ -68,12 +68,11 @@
   .info-app-box .app-info-box {
     color: #fff;
     margin: 2.5em 0 1em;
-    border: 2px solid #fff;
     padding: 0.5em 0 3em 0; }
     .info-app-box .app-info-box h3 {
       text-transform: uppercase; }
     .info-app-box .app-info-box img {
-      margin-top: 1em;
+      margin-top: 3em;
       width: 50%; }
     .info-app-box .app-info-box p {
       color: #fff;
@@ -156,20 +155,27 @@ footer {
     text-align: right; }
     footer .menu-apps-mobile img {
       margin: 2em 0 0;
-      width: 30vw; }
+      width: 80%; }
   footer .copyright {
     color: #fff;
     text-align: center; }
 
 @media (min-width: 575px) {
-  .centerfold .info-box {
-    width: 50%; }
-
-  .driver-box .driver-info {
-    margin: 11em 0; } }
-@media (min-width: 767px) {
   .centerfold {
     height: 600px; }
+    .centerfold .info-box {
+      width: 50%; }
+
+  .driver-box .driver-info {
+    margin: 11em 0; }
+
+  footer .menu-apps-mobile img {
+    width: 60%; }
+  footer .menu-icons-mobile i {
+    font-size: 1.4em; } }
+@media (min-width: 767px) {
+  .centerfold {
+    height: 700px; }
     .centerfold .info-box {
       padding: 3em; }
       .centerfold .info-box .box-download-header-mobile {
@@ -205,7 +211,6 @@ footer {
           content: " ";
           display: inline-block;
           height: 1px;
-          margin: 0 2rem;
           vertical-align: middle;
           width: 20%; }
 
@@ -219,11 +224,14 @@ footer {
       color: #fff;
       text-align: left;
       display: flex;
-      display: inline-block;
-      margin-left: 3em; }
+      /* display: inline-block; */
+      margin-left: 3em;
+      flex-direction: column;
+      justify-content: center; }
       .info-app-box .app-info .app-info-box .app-box-desktop h3 {
         display: block;
-        font-size: 2.3rem; }
+        font-size: 2.3rem;
+        margin: 0 0 1em; }
       .info-app-box .app-info .app-info-box .app-box-desktop p {
         display: inline-block;
         font-size: 1.6rem; }
@@ -245,6 +253,12 @@ footer {
   footer .menu-apps-desktop {
     display: block; }
     footer .menu-apps-desktop img {
-      width: 100%; } }
+      margin: 0 0 1em;
+      width: 100%; }
+  footer .menu-icons-mobile {
+    text-align: center; } }
+@media (min-width: 991px) {
+  .info-app-box .app-info .app-info-box .app-box-desktop {
+    margin-left: 6em; } }
 
 /*# sourceMappingURL=main.css.map */
