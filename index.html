@@ -38,7 +38,7 @@
           <div class="collapse navbar-collapse" id="navbar-1">
             <ul class="nav navbar-nav navbar-right">
               <li class="active">
-                <a href="#">Viaja
+                <a href="#drive">Viaja
                   <span class="sr-only">(current)</span>
                 </a>
               </li>
@@ -46,49 +46,52 @@
                 <a data-toggle="modal" data-target="#driver" href="#">Conduce</a>
               </li>
               <li>
-                <a href="#" data-toggle="modal" data-target="#myModal">Inicia Sesión</a>
+                <a href="#" data-toggle="modal" data-target="#create-account">Registrate</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#login">Inicia Sesión</a>
               </li>
             </ul>
           </div>
-          <!--Modal-->
-          <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog modal-md">
-              <!--Modal profile-->
-              <div class="modal-content  style-modal-content">
+
+          <!--Modal Login-->
+          <div class="modal fade" id="login" role="dialog">
+            <div class="modal-dialog">
+              <!--Modal content-->
+              <div class="modal-content login-modal">
                 <div class="btn-close">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-header no-border">
-                  <img src="assets/images/unnamed.png" alt="profile" class="img-circle">
-                </div>
-                <div class="modal-body style-modal-body">
-                  <form>
-                    <div class="input-group form-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-user-o" aria-hidden="true"></i>
+                <div class="login-box">
+                  <div class="modal-header">
+                    <img src="assets/images/unnamed.png" alt="profile" class="img-circle">
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="input-group form-group">
+                        <div class="input-group-addon">
+                          <i class="fa fa-user-o" aria-hidden="true"></i>
+                        </div>
+                        <input type="text" class="form-control" id="username-account" placeholder="Username">
                       </div>
-                      <input type="text" class="form-control" id="username-account" placeholder="Username">
-                    </div>
-                    <div class="input-group form-group">
-                      <div class="input-group-addon">
-                        <i class="fa fa-unlock" aria-hidden="true"></i>
+                      <div class="input-group form-group">
+                        <div class="input-group-addon">
+                          <i class="fa fa-unlock" aria-hidden="true"></i>
+                        </div>
+                        <input type="password" class="form-control" id="password-account" placeholder="Password">
                       </div>
-                      <input type="password" class="form-control" id="password-account" placeholder="Password">
-                    </div>
-                    <button type="submit" class="btn btn-default" id="btn-login-modal">LOGIN</button>
-                    <div class="forgot-password">
-                      Forgot password?
-                      <a href="#">Click Here</a>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer no-border">
-                  <button type="button" class="btn btn-default" data-dismiss="modal" id="btn-close-modal">Close</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-default" data-dismiss="modal" id="btn-login-modal">LOGIN</button>
+                    <a href="#">Forgot password?</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!-- End Modal -->
+
         </div>
       </nav>
     </div>
@@ -96,9 +99,6 @@
 
   <!--CENTER-->
   <main class="centerfold">
-    <!-- <div class="container-fluid">
-      <div class="row">
-        <div class="col-xs-8 col-xs-offset-4  col-sm-8 col-sm-offset-4  col-md-6 col-md-offset-6"> -->
     <div class="info-box">
       <div class="box-download-header-mobile">
         <p>Comienza a viajar</p>
@@ -118,166 +118,162 @@
       </div>
       <div class="btn-download-desktop">
         <input data-toggle="modal" data-target="#create-account" class="btn btn-default btn-style" type="button" value="REG&#205;STRATE">
-        <p class="">   O bien   </p>
+        <p class=""> O bien </p>
         <input data-toggle="modal" data-target="#driver" class="btn btn-default btn-style" type="button" value="Convi&#233;rtete en conductor">
       </div>
+
       <!-- Modal Account -->
       <div class="modal fade" id="create-account" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
-          <div class="modal-content account-modal-style">
+          <div class="modal-content account-modal">
             <div class="btn-close">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-            <div class="modal-header account-header text-center">
-              <button class="btn btn-default" type="submit">YA TIENES UNA CUENTA?</button>
-              <p>O CREA UNA CUENTA NUEVA</p>
-            </div>
-            <form class="form-horizontal">
-              <div class="form-group input-name">
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
-                </div>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
-                </div>
+            <div class="account-box">
+              <div class="modal-header">
+                <button class="btn btn-default" type="submit">Ya tienes una cuenta?</button>
+                <p>o crea una cuenta nueva</p>
               </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo Electr&#243;nico: ejemplo@correo.pe">
-                </div>
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="form-group input-name">
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                    </div>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Apellido">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Correo Electr&#243;nico">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Tel&#233;fono">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Contrase&#241;a">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ciudad">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-12">
+                      <input type="number" class="form-control" id="exampleInputEmail1" placeholder="(Opcional) C&#243;digo de invitaci&#243;n">
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="number" class="form-control" id="exampleInputEmail1" placeholder="Tel&#233;fono">
-                </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default" data-dismiss="modal">ENVIAR</button>
               </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="password" class="form-control" id="exampleInputEmail1" placeholder="Contrase&#241;a">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ciudad">
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <input type="number" class="form-control" id="exampleInputEmail1" placeholder="(Opcional) C&#243;digo de invitaci&#243;n">
-                </div>
-              </div>
-            </form>
-            <div class="modal-body">
-              <select class="form-control">Cómo te enteraste de nosotros?</select>
-              <button class="btn btn-default" type="submit">ENVIAR</button>
             </div>
           </div>
           <!-- End Modal content-->
         </div>
       </div>
       <!-- End Modal -->
+
       <!-- Modal DRIVER -->
       <div class="modal fade" id="driver" role="dialog">
         <div class="modal-dialog">
           <!-- Modal content-->
-          <div class="modal-content account-modal-style">
+          <div class="modal-content driver-modal">
             <div class="btn-close">
               <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
-            <form class="form-horizontal driver-margin">
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <label for="exampleInputPassword1">¿Tienes vehículo de 4 puertas?</label>
-                </div>
-                <div class="col-sm-12">
-                  <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Si
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">No</a>
-                    </li>
-                  </ul>
-                </div>
+            <div class="driver-box">
+              <div class="modal-body">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <div class="col-xs-12 col-sm-6">
+                      <label for="exampleInputPassword1">¿Tienes vehículo de 4 puertas?</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Si
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Si</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">No</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form-group info-form-group">
+                    <div class="col-xs-12 col-sm-6">
+                      <label for="exampleInputPassword1">Marca</label>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Elige la marca del vehículo
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#">Tsubaru</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Mitsubishi</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Ford</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Honda</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Hyundai</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Nissan</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Toyota</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-xs-12 col-sm-6">
+                      <label for="exampleInputPassword1">Año</label>
+                    </div>
+                    <div class="col-xs-4 col-sm-6">
+                      <input type="number" class="form-control" id="" placeholder="Año">
+                    </div>
+                  </div>
+                  <div class="form-group info-form-group">
+                    <div class="col-xs-12 col-sm-6">
+                      <label for="exampleInputPassword1">Número de placa</label>
+                    </div>
+                    <div class="col-xs-4 col-sm-6">
+                      <input type="number" class="form-control" id="" placeholder="Placa">
+                      <!-- <p>La información de la placa ayuda a los clientes a identificar tu vehículo.</p> -->
+                    </div>
+                  </div>
+                </form>
               </div>
-              <div class="form-group info-form-group">
-                <div class="col-sm-12">
-                  <label for="exampleInputPassword1">Marca</label>
-                </div>
-                <div class="col-sm-12">
-                  <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Elige la marca del vehículo
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">No</a>
-                    </li>
-                  </ul>
-                  <p>¿No ves tu vehículo en la lista? Envía un correo electrónico a
-                    <a href="#">soporte@labcar.com</a>
-                  </p>
-                </div>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-default" data-dismiss="modal">ENVIAR</button>
               </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <label for="exampleInputPassword1">Modelo</label>
-                </div>
-                <div class="col-sm-12">
-                  <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Toyota
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">No</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-12">
-                  <label for="exampleInputPassword1">Año</label>
-                </div>
-                <div class="col-sm-12">
-                  <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">2017
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">No</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="form-group info-form-group">
-                <div class="col-sm-12">
-                  <label for="exampleInputPassword1">Número de placa</label>
-                </div>
-                <div class="col-sm-12">
-                  <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Número de placa
-                    <span class="caret"></span>
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li>
-                      <a href="#">No</a>
-                    </li>
-                  </ul>
-                  <p>La información de la placa ayuda a los clientes a identificar tu vehículo.</p>
-                </div>
-              </div>
-            </form>
-            <div class="modal-body btn-driver">
-              <button class="btn btn-default" type="submit">ENVIAR</button>
             </div>
           </div>
           <!-- End Modal content-->
         </div>
       </div>
       <!-- End Modal -->
+
     </div>
-    <!-- </div>
-      </div>
-    </div> -->
   </main>
   <!--INFO APP-->
   <section class="info-app-box">
@@ -292,8 +288,7 @@
                 <h3>Descarga la nueva app</h3>
                 <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil
                   y rápido.
-                <br>
-                Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe
+                  <br> Con solo tocar un botón, un auto llega justo a tu ubicación. Súbete y no te preocupes: tu conductor sabe
                   exactamente a dónde ir.</p>
               </div>
             </div>
@@ -306,7 +301,7 @@
     </div>
   </section>
   <!--DRIVER-->
-  <section class="driver-box">
+  <section class="driver-container">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -320,7 +315,7 @@
     </div>
   </section>
   <!--PRICE & ROUTE-->
-  <section class="price-route">
+  <section class="price-route" id="drive">
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
@@ -354,14 +349,12 @@
   <footer>
     <div class="container">
       <div class="row">
-
         <div class="col-xs-12">
           <div class="logo-box">
             <img alt="Brand" src="assets/images/logoBlanco.png">
             <hr>
           </div>
         </div>
-
         <div class="col-xs-6 col-sm-2 col-sm-offset-0 col-md-2 col-md-offset-1">
           <div class="menu-footer-mobile">
             <ul>
@@ -376,7 +369,6 @@
             </ul>
           </div>
         </div>
-
         <div class="col-sm-2 col-sm-offset-1 col-md-2 col-md-offset-1">
           <div class="extra-footer">
             <ul>
@@ -391,7 +383,6 @@
             </ul>
           </div>
         </div>
-
         <div class="col-xs-6 col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-0">
           <div class="menu-icons-mobile">
             <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -405,14 +396,12 @@
             <img alt="Brand" src="assets/images/appstore.png">
           </div>
         </div>
-
         <div class="col-sm-3 col-md-2">
           <div class="menu-apps-desktop">
             <img alt="Brand" src="assets/images/enBadgeWebGeneric.png">
             <img alt="Brand" src="assets/images/appstore.png">
           </div>
         </div>
-
         <div class="col-xs-12">
           <div class="copyright">
             <hr> &copy; 2017 LabCar technologies Inc.
@@ -422,7 +411,7 @@
       </div>
     </div>
   </footer>
-  <script src="vendors/js/jquery.js"></script>
+  <script src="vendors/js/jquery.min.js"></script>
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
 </body>

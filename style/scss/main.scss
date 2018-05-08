@@ -27,22 +27,111 @@ $dark-grey: #363333;
   display: none;
 }
 
+/*MODALS*/
+%x-header {
+  background-color: $orange;
+  margin-bottom: 1em;
+  text-align: center;  
+}
 
+%send-button {
+  background-color: orange;
+  color: #fff;
+  font-weight: 600;  
+}
 
+.modal-header, .modal-body, .modal-footer {
+  border: none;
+}
 
-// .full-width {
-//   padding: 0;
-// }
+.driver-modal {
+  padding: 0.3em 0.5em;
+  .driver-box {
+    padding: 1.1em;
+    .modal-body {
+      padding: 0px;
+      label {
+        color: $orange;
+      }
+    }
+    .modal-footer {
+      text-align: center;
+      button {
+        @extend %send-button;
+      }
+    }    
+  }
+}
 
-// .no-margin {
-//   margin: 0;
-// }
+.account-modal {
+  padding: 0.3em 0.5em;
+  .account-box {
+    padding: 1.1em;
+    .modal-header {
+      @extend %x-header;
+      button {
+        color: $orange;
+      }
+      p {
+        color: #fff;
+        margin-top: 0.5em;
+      }
+    }
+    .modal-body {
+      padding: 0;
+      .input-name {
+        input{
+        margin-top: 1em;        
+        }
+
+      }
+    }
+    .modal-footer {
+      text-align: center;
+      button {
+      @extend %send-button;
+      }
+    }    
+  }
+}
+
+.login-modal {
+  padding: 0.3em 0.5em;
+  .login-box {
+    padding: 1.1em;
+    .modal-header { 
+      text-align: center;
+    }
+    .modal-body {
+      .input-group-addon {
+        background-color: orange;
+        color: white;
+      }
+    }
+    .modal-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      button {
+        @extend %send-button;
+      }
+      a {
+        margin-top: 0.5em;
+      }
+    }
+  }
+}
+
 
 /*NAVBAR*/
 .menu-box {
   background-color: #fff;
   border: none;
   margin: 1em 0;
+  a:focus {
+    outline: none;
+  }
   .logo {    
     display: flex;
     flex-direction: column;
@@ -91,10 +180,6 @@ $dark-grey: #363333;
         font-size: 1.6rem;
       }
     }
-    // .box-download-header-mobile p::after, .box-download-text-desktop p::after{
-    //   content: url("../assets/images/logoBlanco.png");
-    //   display: inline-block;
-    // }
   }
 }
 
@@ -130,102 +215,10 @@ $dark-grey: #363333;
 
 }
 
-// /*Modal log in*/
-// .style-modal-content {
-//   background-color: #6ad2f3;
-//   padding: 0.5em;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// .style-modal-content button {
-//   display: inline;
-//   text-align: right;
-// }
-
-// .style-modal-body {
-//   background-color: #f7f7f7;
-//   border-radius: 7px;
-//   margin: 0 10em;
-//   text-align: center;
-// }
-
-// .btn-close {
-//   width: 100%;
-// }
-
-// .style-modal-body form button {
-//   background-color: #ffa500;
-//   color: #fff;
-// }
-// /*End Login modal*/
-
-// .no-border {
-//   border: none;
-// }
-
-// .forgot-password {
-//   margin: 1em 0;
-// }
-
-// /*End navbar*/
-
-// /*Center Image*/
-
-// /*Modal create account*/
-// .account-modal-style {
-//   background-color: #cdced0;
-//   padding: 0.5em 2.5em;
-// }
-
-// .account-header {
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .account-header button {
-//   background-color: #000;
-//   color: #fff;
-//   margin-bottom: 1em;
-// }
-
-// .info-form-group div p {
-//   color: #7c7c7c;
-// }
-// /*end modal*/
-
-// /*Modal Driver*/
-
-// .driver-margin {
-//   margin-top: 1.4em;
-// }
-// .btn-list{
-//   width: 100%;
-//   font-size: 1.3rem;
-// }
-
-// .btn-driver {
-//   margin: 1.3em 0;
-//   padding: 0;
-// }
-
-// .btn-driver button {
-//   background-color: #7dc2eb;
-//   color: #fff;
-//   width: 100%;
-// }
-
-// .col-sm-12 .btn-list {
-//   text-align: left;
-// }
-
-// /*end modal*/
-
 
 
 /*DIVER*/
-.driver-box {
+.driver-container {
   // background-color: $dark-grey;
   background-image: url(../../assets/images/driver.png);
   background-size: cover;
@@ -297,29 +290,6 @@ $dark-grey: #363333;
 }
 
 
-
-
-
-
-
-
-
-
-// .btn-route {
-//   margin: 1.3em 0 4em 0;
-// }
-
-// .btn-route input{
-//   font-size: 1.6rem;
-//   padding: 0.6em 2em;
-// }
-
-
-// /*End price & route*/
-
-
-
-
 /*FOOTER*/
 footer {
   background-color: #000;
@@ -368,7 +338,7 @@ footer {
     }
   }
 
-  .driver-box {
+  .driver-container {
     .driver-info {
       margin: 11em 0;
     }
@@ -478,7 +448,7 @@ footer {
     }
   }
 
-  .driver-box {
+  .driver-container {
     .driver-info {
       margin: 12em 0;
     }

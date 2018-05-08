@@ -17,11 +17,71 @@
 .menu-apps-desktop {
   display: none; }
 
+/*MODALS*/
+.account-modal .account-box .modal-header {
+  background-color: #ffa500;
+  margin-bottom: 1em;
+  text-align: center; }
+
+.driver-modal .driver-box .modal-footer button, .account-modal .account-box .modal-footer button, .login-modal .login-box .modal-footer button {
+  background-color: orange;
+  color: #fff;
+  font-weight: 600; }
+
+.modal-header, .modal-body, .modal-footer {
+  border: none; }
+
+.driver-modal {
+  padding: 0.3em 0.5em; }
+  .driver-modal .driver-box {
+    padding: 1.1em; }
+    .driver-modal .driver-box .modal-body {
+      padding: 0px; }
+      .driver-modal .driver-box .modal-body label {
+        color: #ffa500; }
+    .driver-modal .driver-box .modal-footer {
+      text-align: center; }
+
+.account-modal {
+  padding: 0.3em 0.5em; }
+  .account-modal .account-box {
+    padding: 1.1em; }
+    .account-modal .account-box .modal-header button {
+      color: #ffa500; }
+    .account-modal .account-box .modal-header p {
+      color: #fff;
+      margin-top: 0.5em; }
+    .account-modal .account-box .modal-body {
+      padding: 0; }
+      .account-modal .account-box .modal-body .input-name input {
+        margin-top: 1em; }
+    .account-modal .account-box .modal-footer {
+      text-align: center; }
+
+.login-modal {
+  padding: 0.3em 0.5em; }
+  .login-modal .login-box {
+    padding: 1.1em; }
+    .login-modal .login-box .modal-header {
+      text-align: center; }
+    .login-modal .login-box .modal-body .input-group-addon {
+      background-color: orange;
+      color: white; }
+    .login-modal .login-box .modal-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .login-modal .login-box .modal-footer a {
+        margin-top: 0.5em; }
+
 /*NAVBAR*/
 .menu-box {
   background-color: #fff;
   border: none;
   margin: 1em 0; }
+  .menu-box a:focus {
+    outline: none; }
   .menu-box .logo {
     display: flex;
     flex-direction: column;
@@ -85,23 +145,23 @@
       font-size: 2rem; }
 
 /*DIVER*/
-.driver-box {
+.driver-container {
   background-image: url(../../assets/images/driver.png);
   background-size: cover;
   background-position: center; }
-  .driver-box .driver-info {
+  .driver-container .driver-info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     color: #fff;
     padding: 0 2em;
     margin: 7em 0; }
-    .driver-box .driver-info p:first-child {
+    .driver-container .driver-info p:first-child {
       font-weight: 600;
       font-size: 2.1rem !important; }
-    .driver-box .driver-info p {
+    .driver-container .driver-info p {
       font-size: 1.8rem; }
-    .driver-box .driver-info input {
+    .driver-container .driver-info input {
       background-color: #ffa500;
       border: none;
       color: #fff;
@@ -166,7 +226,7 @@ footer {
     .centerfold .info-box {
       width: 50%; }
 
-  .driver-box .driver-info {
+  .driver-container .driver-info {
     margin: 11em 0; }
 
   footer .menu-apps-mobile img {
@@ -238,7 +298,7 @@ footer {
   .info-app-box .app-info .app-info-footer {
     display: none; }
 
-  .driver-box .driver-info {
+  .driver-container .driver-info {
     margin: 12em 0; }
 
   footer .extra-footer {
