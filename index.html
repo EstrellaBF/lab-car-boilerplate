@@ -192,13 +192,13 @@
             </div>
             <div class="driver-box">
               <div class="modal-body">
-                <form class="form-horizontal">
+                <form class="form-horizontal" id="driver-form">
                   <div class="form-group">
                     <div class="col-xs-12 col-sm-6">
                       <label for="exampleInputPassword1">¿Tienes vehículo de 4 puertas?</label>
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Si
+                      <button id="driver-vehicle-btn" class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Si
                         <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu">
@@ -216,7 +216,7 @@
                       <label for="exampleInputPassword1">Marca</label>
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                      <button class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Elige la marca del vehículo
+                      <button id="driver-brand-btn" class="btn btn-default dropdown-toggle btn-list" type="button" data-toggle="dropdown">Ford
                         <span class="caret"></span>
                       </button>
                       <ul class="dropdown-menu">
@@ -249,7 +249,7 @@
                       <label for="exampleInputPassword1">Año</label>
                     </div>
                     <div class="col-xs-4 col-sm-6">
-                      <input type="number" class="form-control" id="" placeholder="Año">
+                      <input id="driver-year-btn" type="number" class="form-control" id="" placeholder="Año">
                     </div>
                   </div>
                   <div class="form-group info-form-group">
@@ -257,14 +257,14 @@
                       <label for="exampleInputPassword1">Número de placa</label>
                     </div>
                     <div class="col-xs-4 col-sm-6">
-                      <input type="number" class="form-control" id="" placeholder="Placa">
+                      <input id="driver-plate-btn" type="number" class="form-control" id="" placeholder="Placa">
                       <!-- <p>La información de la placa ayuda a los clientes a identificar tu vehículo.</p> -->
                     </div>
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-default" data-dismiss="modal">ENVIAR</button>
+                <button id="sent-btn-d" type="button" class="btn btn-default" data-dismiss="modal">ENVIAR</button>
               </div>
             </div>
           </div>
@@ -318,7 +318,7 @@
   <section class="price-route" id="drive">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6">
           <div class="background-price-route">
             <div class="price-route-box">
               <div class="info-price">
@@ -327,19 +327,21 @@
               </div>
               <div class="info-route">
                 <img alt="Brand" src="assets/images/shape.png">
-                <input type="text" class="form-control" placeholder="Punto de partida">
+                <input id="txtOrigin" type="text" class="form-control" placeholder="Punto de partida">
               </div>
               <div class="info-route">
                 <img alt="Brand" src="assets/images/shape2.png">
-                <input type="text" class="form-control" placeholder="Punto de partida">
+                <input id="txtDestiny" type="text" class="form-control" placeholder="Punto de partida">
               </div>
               <div class="btn-route text-center ">
-                <input class="btn btn-default btn-style" type="button" value="¡TRAZAR RUTA!">
+                <input id="btnRuta" class="btn btn-default btn-style" type="button" value="¡TRAZAR RUTA!">
               </div>
             </div>
-            <div class="route-map-mobile">
-              <img alt="Brand" src="assets/images/SilentHill3D_GoogleMap12.jpg">
-            </div>
+
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-6">
+          <div id="map" alt="map">
           </div>
         </div>
       </div>
@@ -414,6 +416,7 @@
   <script src="vendors/js/jquery.min.js"></script>
   <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/map.js"></script>
 </body>
 
 </html>
