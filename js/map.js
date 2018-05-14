@@ -15,9 +15,12 @@ function initMap() {
         lat: position.coords.latitude,
         lng: position.coords.longitude
       };
-
-      infoWindow.setPosition(pos);
-      infoWindow.setContent('Se encuentra aquí');
+      let marker = new google.maps.Marker({
+        position: pos,
+        map: map
+      });
+      // infoWindow.setPosition(pos);
+      // infoWindow.setContent('Se encuentra aquí');
       map.setCenter(pos);
     }, function() {
       handleLocationError(true, infoWindow, map.getCenter());

@@ -5,6 +5,11 @@
   padding: 0;
   font-family: 'Nunito Sans', sans-serif; }
 
+#map {
+  background-color: grey;
+  height: 300px;
+  width: 100%; }
+
 .box-download-header-desktop, .box-download-text-desktop, .btn-download-desktop {
   display: none; }
 
@@ -170,24 +175,33 @@
 
 /*PRICE & ROUTE*/
 .price-route {
-  background-color: #ffa500; }
+  background-color: #ffa500;
+  padding: 4em 0; }
   .price-route .background-price-route {
     margin: 0;
-    padding: 4em 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around; }
-    .price-route .background-price-route .price-route-box .info-price {
-      color: #fff; }
-      .price-route .background-price-route .price-route-box .info-price h3 {
-        font-size: 2em; }
-      .price-route .background-price-route .price-route-box .info-price p {
-        font-size: 1.6em; }
-    .price-route .background-price-route .price-route-box .info-route input {
-      border: 1px solid #fff;
-      display: inline-block;
-      margin: 1.3em;
-      width: 65vw; }
+    .price-route .background-price-route .price-route-box {
+      padding-bottom: 2em; }
+      .price-route .background-price-route .price-route-box .info-price {
+        color: #fff;
+        margin-bottom: 2em; }
+        .price-route .background-price-route .price-route-box .info-price h3 {
+          font-size: 2em;
+          margin-top: 0; }
+        .price-route .background-price-route .price-route-box .info-price p {
+          font-size: 1.6em; }
+      .price-route .background-price-route .price-route-box .info-route input {
+        border: 1px solid #fff;
+        display: inline-block;
+        margin-bottom: 1.5em;
+        width: 90%; }
+      .price-route .background-price-route .price-route-box .btn-route {
+        margin-top: 0.5em; }
+        .price-route .background-price-route .price-route-box .btn-route input {
+          color: grey;
+          font-weight: 700; }
     .price-route .background-price-route .route-map-mobile img {
       background-size: cover;
       background-position: center;
@@ -220,7 +234,7 @@ footer {
     color: #fff;
     text-align: center; }
 
-@media (min-width: 575px) {
+@media (min-width: 576px) {
   .centerfold {
     height: 600px; }
     .centerfold .info-box {
@@ -233,7 +247,7 @@ footer {
     width: 60%; }
   footer .menu-icons-mobile i {
     font-size: 1.4em; } }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .centerfold {
     height: 700px; }
     .centerfold .info-box {
@@ -317,8 +331,11 @@ footer {
       width: 100%; }
   footer .menu-icons-mobile {
     text-align: center; } }
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .info-app-box .app-info .app-info-box .app-box-desktop {
-    margin-left: 6em; } }
+    margin-left: 6em; }
+
+  .price-route .background-price-route .price-route-box .info-route input {
+    width: 75%; } }
 
 /*# sourceMappingURL=main.css.map */

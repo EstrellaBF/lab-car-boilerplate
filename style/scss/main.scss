@@ -7,6 +7,11 @@
   font-family: 'Nunito Sans', sans-serif;
 }
 
+#map {
+  background-color: grey;
+  height: 300px;
+  width: 100%;
+}
 
 .box-download-header-desktop, .box-download-text-desktop, .btn-download-desktop {
   display: none;
@@ -252,17 +257,21 @@ $dark-grey: #363333;
 /*PRICE & ROUTE*/
 .price-route {
   background-color: $orange;
+  padding: 4em 0;
   .background-price-route {
     margin: 0;
-    padding: 4em 0;
+    // padding: 4em 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     .price-route-box {
+      padding-bottom: 2em;
       .info-price {
         color: #fff;
+        margin-bottom: 2em;
         h3 {
           font-size: 2em;
+          margin-top: 0;
         }    
         p {
           font-size: 1.6em;
@@ -273,8 +282,15 @@ $dark-grey: #363333;
           // background-color: #ffa500;
           border: 1px solid #fff;
           display: inline-block;
-          margin: 1.3em;
-          width: 65vw;
+          margin-bottom: 1.5em;
+          width: 90%;
+        }
+      }
+      .btn-route {
+        margin-top: 0.5em;
+        input {
+          color: grey;
+          font-weight: 700;     
         }
       }
     }
@@ -330,7 +346,7 @@ footer {
 
 
 
-@media (min-width:575px) {
+@media (min-width:576px) {
   .centerfold {
     height: 600px;
     .info-box {
@@ -358,7 +374,7 @@ footer {
   }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .centerfold {
     height: 700px;
     .info-box {
@@ -483,7 +499,7 @@ footer {
 
 }
 
-@media (min-width: 991px) {
+@media (min-width: 992px) {
   .info-app-box {
     .app-info {
       .app-info-box {
@@ -493,22 +509,14 @@ footer {
       }
     }
   }
-}
-// @media (min-width: 992px){
-//   /*INFO APP*/
-//   .app-box-desktop h3{
-//     font-size: 3.2rem;
-//   }
 
-//   .app-box-desktop p{
-//     font-size: 2rem;
-//   }
-//   /*INFO APP*/
-//   .app-info-box {
-//     padding: 2rem 5rem;
-//   }
-//   /*DRIVER*/
-//   .driver-info .btn-style {
-//     width: 22vw;
-//   }
-// }  
+  .price-route {
+    .background-price-route {
+      .price-route-box {
+        .info-route input {
+          width: 75%;
+        }
+      }
+    }
+  }
+}
