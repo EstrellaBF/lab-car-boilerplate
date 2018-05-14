@@ -14,33 +14,46 @@ $(document).ready(function () {
   $('.dropdown-item').on('click', selectOption);
 
   // verifying driver modal
-  $('#driver-form').on('submit', function() {
+  $('#driver-form').on('submit', function () {
     alert('hice form')
   })
 
 
-  $('#driver-year-btn').on('input', function() {
+  $('#driver-year-btn').on('input', function () {
     $(this).val();
   })
-  // // 
-  // $driverBrand.on('focusout', function() {
-  //   console.log();
-  // });
-  // let li = $driverBrand.next().find('li');
-
-  // let lop = [];
-  // for(let l of li) {
-  //   console.log(l)
-  //   lop = l
-  // }
-  // console.log(lop)
 
 
-  // $('#sent-btn-d').on('click', function(e) {
-  //   e.preventDefault();
-  //   console.log(this)
-  // })
+  // $('#btn-login-modal').attr('disabled', true);
+  // // let $('#password-account') = false;
+  // // let usernameAccount = $('#username-account');
+  // // usernameAccount =  false;
 
+
+  let usernameStatus = false;
+
+  $('#btn-login-modal').attr('disabled', true);
+
+  $('#username-account').on('keyup', function () {
+    if ($(this).val().length > 3) {
+      usernameStatus = true;
+    } else {
+      usernameStatus = false;
+    }
+  })
+
+  $('#password-account').on('keyup', function () {
+    console.log(usernameStatus);
+    if ($(this).val().length > 3 && usernameStatus === true) {
+      $('#btn-login-modal').attr('disabled', false);
+    } else {
+      $('#btn-login-modal').attr('disabled', true);
+    }
+  })
+
+  $('#btn-login-modal').on('click', function () {
+    alert('No estás registrado.')
+  })
 
 
 });
